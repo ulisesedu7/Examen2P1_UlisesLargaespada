@@ -22,7 +22,7 @@ public class Granja {
 
   public Granja(String nombreGranja) {
     this.nombreGranja = nombreGranja;
-    this.dinero = 5000;
+    this.dinero = 500;
     this.vacas = new ArrayList();
     this.conejos = new ArrayList();
     this.vegetales = new ArrayList();
