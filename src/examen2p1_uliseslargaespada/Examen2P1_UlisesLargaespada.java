@@ -302,7 +302,7 @@ public class Examen2P1_UlisesLargaespada {
 
                   granja.addConejo(nombreConejo);
 
-                  System.out.println(nombreConejo + "ha sido enviado a la granja!");
+                  System.out.println(nombreConejo + " ha sido enviado a la granja!");
                 }
 
                 System.out.println("Tu nueva cantidad de dinero es: " + granja.getDinero());
@@ -331,7 +331,7 @@ public class Examen2P1_UlisesLargaespada {
 
                   granja.addVaca(nombreVaca);
 
-                  System.out.println(nombreVaca + "ha sido enviado a la granja!");
+                  System.out.println(nombreVaca + " ha sido enviado a la granja!");
                 }
 
                 System.out.println("Tu nueva cantidad de dinero es: " + granja.getDinero());
