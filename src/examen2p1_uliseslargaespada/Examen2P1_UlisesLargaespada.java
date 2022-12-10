@@ -120,11 +120,11 @@ public class Examen2P1_UlisesLargaespada {
 
     Granja granja = new Granja(granjaName);
 
-    // Dinero inicial
-    double dinero = granja.getDinero();
-
     // Iniciar menu repetitivo
     do {
+      // Dinero inicial para check si ha llegado a la meta o no
+      double dinero = granja.getDinero();
+
       System.out.println("<---------- DIA: " + days + " ---------->");
 
       // Empezar a contar dias si hay plantas cosechandose
@@ -180,9 +180,9 @@ public class Examen2P1_UlisesLargaespada {
         case 5 -> {
           System.out.println("Ve a dormir, ten un buen descanso!");
         }
-        
+
         case 7 -> {
-          
+
         }
 
         default ->
@@ -196,10 +196,6 @@ public class Examen2P1_UlisesLargaespada {
 
       if (dinero >= 5000 && option == 7) {
         finalOfGame(nombre, granja);
-        break;
-      }
-      // Salir del programa 
-      if (option == 6) {
         break;
       }
     } while (true);
@@ -388,11 +384,11 @@ public class Examen2P1_UlisesLargaespada {
               for (int i = 1; i <= cantidadVender; i += 1) {
                 granja.sellVegetal();
               }
-              
+
               System.out.println("Se han vendido " + cantidadVender);
             }
           }
-          
+
           System.out.println("Tu nueva cantidad de dinero es: " + granja.getDinero());
         }
 
@@ -418,9 +414,9 @@ public class Examen2P1_UlisesLargaespada {
               for (int i = 1; i <= cantidadVender; i += 1) {
                 granja.sellVaca();
               }
-              
+
               System.out.println("Se han vendido " + cantidadVender);
-            }                        
+            }
           }
 
           System.out.println("Tu nueva cantidad de dinero es: " + granja.getDinero());
@@ -471,20 +467,21 @@ public class Examen2P1_UlisesLargaespada {
   public static void finalOfGame(String nombre, Granja granja) {
     System.out.println("Luego de haber obtenido " + granja.getDinero() + " gald...");
     System.out.println("Y de haber obtenido todos estos recursos: ");
-    
+
     System.out.println("---------ANALISIS DE GRANJA---------");
     System.out.println("Tienes " + granja.getVegetales().size() + " Vegetales");
     System.out.println("Tienes " + granja.getVacas().size() + " Vacas");
     System.out.println("Tienes " + granja.getConejos().size() + " Conejos");
     System.out.println("------------------------------------ \n");
-    
+
     System.out.println(nombre + " decidio retirarse, y vivir una vida aun mas tranquila...");
-    System.out.println("Se caso, tuvo hijos, los vio crecer, compuso musica...");
-    System.out.println("Alejado de todo ajetreo de la vida, trabajo, universidad y programacion... ");
+    System.out.println("Se caso con el amor de su vida, tuvo hijos, los vio crecer, compuso mucha musica...");
+    System.out.println("Nunca regreso a la vida cotidiana...");
+    System.out.println("Estuvo siemopre alejado de todo ajetreo de la vida, trabajo, universidad y programacion... ");
     System.out.println("Para vivir en el campo, en paz, soledad, y feliz de la vida!! \n");
-    
+
     System.out.println("------THE END------");
-    
+
     System.exit(0);
   }
 }
